@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Elevate your persona",
+    "description": "The steel case is 39mm-wide and 9.45mm-thick with a 47.7mm long lug-to-lug distance. That means it wears very comfortably as a men's dress watch with sleeves",
+    "priceList": {
+      "discount_price": 148.98,
+      "price": 198.98
+    },
+    "image": "./images/black_watch.png",
+    "ratings": {
+      "value": 4.5
+    },
+    "straps": 16
+  },
+  {
+    "name": "patek philippe triple",
+    "description": "The steel case is 39mm-wide and 9.45mm-thick with a 47.7mm long lug-to-lug distance. That means it wears very comfortably as a men's dress watch with sleeves",
+    "priceList": {
+      "discount_price": 499.99,
+      "price": 699.99
+    },
+    "image": "./images/patek_philippe_triple.png",
+    "ratings": {
+      "value": 4.7
+    },
+    "straps": 10
+  },
+  {
+    "name": "ulysse nardin perpetual",
+    "description": "The steel case is 39mm-wide and 9.45mm-thick with a 47.7mm long lug-to-lug distance. That means it wears very comfortably as a men's dress watch with sleeves",
+    "priceList": {
+      "discount_price": 245.99,
+      "price": 289.99
+    },
+    "image": "./images/ulysse_nardin_perpetual.png",
+    "ratings": {
+      "value": 4.2
+    },
+    "straps": 8
+  },
+  {
+    "name": "casio g-shock classic",
+    "description": "The steel case is 39mm-wide and 9.45mm-thick with a 47.7mm long lug-to-lug distance. That means it wears very comfortably as a men's dress watch with sleeves",
+    "priceList": {
+      "discount_price": 199.99,
+      "price": 299.99
+    },
+    "image": "./images/casio_gshock_classic.png",
+    "ratings": {
+      "value": 4.5
+    },
+    "straps": 20
+  }
+]

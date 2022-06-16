@@ -103,4 +103,7 @@ $(".product_showcase").slick({
   dots: false,
   prevArrow: $(".prev"),
   nextArrow: $(".next"),
+  autoplay: true,
+  speed: 500,
+  autoplaySpeed: 5000,
 });

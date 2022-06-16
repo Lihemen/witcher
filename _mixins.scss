@@ -6,3 +6,21 @@ $white: #efefef;
   background-color: $secondary_color;
   color: $white;
 }
+
+@mixin small {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: 760px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: 900px) {
+    @content;
+  }
+}

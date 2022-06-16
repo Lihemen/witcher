@@ -59,7 +59,8 @@ a:hover {
 }
 
 aside {
-  height: 100%;
+  height: 100vh;
+  position: fixed;
 }
 
 aside nav {
@@ -82,7 +83,7 @@ aside nav {
 }
 
 aside .menu_btn {
-  width: 100%;
+  width: 50px;
   background-color: #595959;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +132,7 @@ aside .socials .nav_social a {
 main {
   width: calc(100% - 50px);
   padding: 3rem 4rem;
-  padding-left: 8rem;
+  padding-left: 14rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,6 +210,7 @@ header .navbar .nav_icons span:first-child {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 4rem 0;
+  margin-right: 1rem;
 }
 
 .single_product .product_info {
@@ -232,7 +234,7 @@ header .navbar .nav_icons span:first-child {
   font-size: 5rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 500;
-  max-width: 80%;
+  width: 80%;
   text-transform: uppercase;
 }
 
@@ -259,7 +261,7 @@ header .navbar .nav_icons span:first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: clamp(45ch, 50%, 75ch);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -370,5 +372,112 @@ header .navbar .nav_icons span:first-child {
 .controls span:hover, .controls span:focus {
   background-color: #efefef;
   color: #595959;
+}
+
+@media (max-width: 900px) {
+  aside {
+    width: 100vw;
+    height: 50px;
+    background-color: #242424;
+    position: fixed;
+    z-index: 3;
+  }
+  aside nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    border-bottom: 1px solid #595959;
+  }
+  aside nav .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  aside nav .socials .nav_social {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  main {
+    width: 100%;
+    padding: 6rem 3rem;
+  }
+  header .navbar {
+    display: none;
+  }
+  footer {
+    padding-bottom: 2rem;
+  }
+  .single_product {
+    margin: 4rem 0 2rem 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .single_product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .single_product .product_info h1 {
+    font-size: 3rem;
+  }
+  .single_product .product_info .product_about {
+    width: 100%;
+    text-align: justify;
+  }
+  .single_product .product_info .product_prices {
+    width: 60%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  .single_product .product_info .product_prices h3 {
+    margin-bottom: 2rem;
+  }
+  .single_product .product_info .add_to_cart {
+    margin-bottom: 1rem;
+  }
+  .single_product .image_review {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .single_product .image_review img {
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+  .single_product .image_review .watch_review {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .single_product .image_review .watch_review h2 {
+    font-size: 2rem;
+  }
+  .single_product .image_review .watch_review > * {
+    margin: 0 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
